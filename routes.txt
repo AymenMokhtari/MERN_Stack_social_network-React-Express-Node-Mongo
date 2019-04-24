@@ -1,0 +1,97 @@
+
+# login # 
+    Post http://localhost:5000/api/users/login 
+        email:alex@hotmail.com
+        password:alexalex
+=====================================
+        email:alex@hotmail.com
+        password:alexalex
+
+
+
+# Register
+    Post http://localhost:5000/api/users/register
+        name:david
+        email:david@hotmail.com
+        password:daviddavid
+        password2:daviddavi
+        
+        
+# Get current user 
+    Get http://localhost:5000/api/users/current
+    
+    
+    
+    
+# Create Profile 
+    Post http://localhost:5000/api/profile
+        handle:test Delete
+        status:developer
+        skills:React
+        company:Accenture
+        website:ales.tn
+        facebook:www.facebook.com/alex
+        twitter:www.twitter.com/alex
+        instagram:www.twitter.com/alex
+
+# Get profile by user  
+    Get http://localhost:5000/api/profile/user/5cb24b9590f137312c59541a
+    
+    
+# Get Profile by handle
+    Get http://localhost:5000/api/profile/handle/aymen
+
+
+
+
+#add education
+    Post http://localhost:5000/api/profile/education
+        school:esprit university
+        degree:bachelor degreefff
+        from:2016-02-04
+        to:2019-02-04
+        description:lorum eplson dolor
+        fieldofstudy:Computer Science
+        
+        
+# Add experience 
+    Post http://localhost:5000/api/profile/experience
+        title:developer
+        company:Amazon
+        from:2018-02-04
+        to:2019-02-04
+        description:lorum eplson dolor
+# Get all Profiles 
+    Get http://localhost:5000/api/profile/all
+    
+# Delete Experience 
+    Delete http://localhost:5000/api/profile/experience/5cb4802736003c40d8b4b2b8
+    
+    
+# Delete Education 
+    Delete http://localhost:5000/api/profile/education/5cb4802736003c40d8b4b2b8
+
+# Delete Profile 
+    Delete http://localhost:5000/api/profile
+    
+# Create new post 
+    Post http://localhost:5000/api/posts
+        text:This is another test
+        
+# Get all post 
+    Get http://localhost:5000/api/posts 
+    
+#Get post by id 
+    Get http://localhost:5000/api/posts/5cb48ead1ab0c42e4cfe6683
+    
+# Delete Post by id
+    Delete http://localhost:5000/api/posts/5cb49c3af4364e1d94323c3ed
+    
+# Like new Post by post id 
+    Post http://localhost:5000/api/posts/like/5cb48e4a6a48584764ef9185
+    
+# Unlike post 
+    Post http://localhost:5000/api/posts/unlike/5cb48e4a6a48584764ef9185  // the id is the post id 
+    
+# Add new comment to a post 
+    Post http://localhost:5000/api/posts/comment/5cb48e4a6a48584764ef9185 // the id is the post id 
